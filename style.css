@@ -268,6 +268,7 @@ nav .navigation ul li a:hover {
   padding: 5px 20px 10px 20px;
   text-align: center;
   margin-top: 5px;
+  line-height: 25px;
 }
 
 #course h1 {
@@ -282,20 +283,25 @@ nav .navigation ul li a:hover {
   margin-top: 10px;
   padding-left: 20px;
   padding-right: 20px;
+  
 }
-
 #course .courses {
   text-align: center;
   background-color: #f0f0fe;
   height: 100%;
   position: relative;
   border-radius: 10px;
+  transition: transform .2s;
+  box-shadow: 5px 5px 5px lightgray;
+}
+#course .courses:hover{
+  transform: scale(1.03);
 }
 
 #course .courses img {
   padding-top: 20px;
-  width: 200px;
-  height: 150px;
+  width: 100px;
+  height: 110px;
   background-size: cover;
   background-position: center;
   align-items: center;
@@ -308,81 +314,6 @@ nav .navigation ul li a:hover {
 }
 
 /* ===================== CONTACT SECTION ===================== */
-
-#contact h1 {
-  color: #00416a;
-  align-items: flex-start;
-  font-family: "pop-bold";
-  font-size: 40px;
-  padding-bottom: 30px;
-}
-
-#contact .getin {
-  width: 300px;
-}
-
-#contact .getin h2 {
-  color: #00416a;
-  font-size: 30px;
-
-  line-height: 0.8;
-  margin-bottom: 16px;
-}
-
-#contact .getin p {
-  color: #686875;
-  line-height: 24px;
-  margin-bottom: 30px;
-  padding-bottom: 25px;
-  border-bottom: 1px solid #e5e4ed;
-}
-
-#contact .getin .getin-details div {
-  display: flex;
-}
-
-#contact .getin .getin-details div .get {
-  font-size: 16px;
-  line-height: 22px;
-  color: #21a7fa;
-  margin-right: 20px;
-}
-
-#contact .getin .getin-details div p {
-  font-size: 14px;
-  border-bottom: none;
-  line-height: 22px;
-  margin-bottom: 15px;
-}
-
-#contact h3 {
-  color: #00416a;
-  padding-bottom: 5px;
-}
-
-#contact .pro-links {
-  display: flex;
-  gap: 20px;
-  color: #21a7fa;
-}
-#contact .form .form-col input[readonly] {
-  background-color: #e9ecef; /* A subtle background color for the readonly field */
-  color: #00416a; /* Dark color for text */
-  border: 1px solid #ccc; /* Subtle border for readonly input */
-  cursor: not-allowed; /* Cursor indicating the field is uneditable */
-}
-
-#contact .form .form-col input.your-class-name {
-  background-color: #e9ecef; /* Same background color for consistency */
-  color: #00416a;
-  border: 1px solid #ccc;
-  cursor: not-allowed;
-}
-
-#contact .form .form-col input.your-class-name[readonly] {
-  color: #00416a;
-  font-weight: bold; /* Optional: Make the text stand out */
-}
 
 #admission-section .form {
   width: 70%;
@@ -417,7 +348,7 @@ nav .navigation ul li a:hover {
   border: none;
   outline: none;
   color: #353535;
-  padding: 20px 10px;
+  padding: 20px 10px 10px 10px;
   margin-bottom: 5px;
   box-shadow: 4px 4px 4px gray;
 }
@@ -583,6 +514,18 @@ footer .copyright i:hover {
     background-color: #90d5ff;
     margin-left: 5px;
   }
+  #course .courses {
+    text-align: center;
+    background-color: #f0f0fe;
+    height: 100%;
+    position: relative;
+    border-radius: 10px;
+    transition: transform .2s;
+    box-shadow: 5px 5px 5px lightgray;
+  }
+  #course .courses:hover{
+    transform: scale(1.03);
+  }
 
   #contact {
     flex-direction: column-reverse;
@@ -590,76 +533,6 @@ footer .copyright i:hover {
     justify-content: center;
     align-items: center;
     text-align: center;
-  }
-
-  #contact .getin {
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
-
-  #contact .pro-links {
-    display: flex;
-    gap: 20px;
-    color: #21a7fa;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
-  #contact .getin .getin-details div {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
-
-  #contact .getin .getin-details div .get {
-    font-size: 16px;
-    line-height: 16px;
-    color: #21a7fa;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
-
-  #contact .getin .getin-details div p {
-    font-size: 14px;
-    border-bottom: none;
-    line-height: 24px;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
-
-  #contact .form {
-    width: 100%;
-    padding: 0;
-  }
-
-  #contact .form .form-col .submit {
-    margin-right: 0;
-  }
-
-  #contact .form .form-col .reset {
-    margin-left: 0;
-  }
-
-  #contact .form .form-col select {
-    width: 100%;
-    height: 8vw;
-    border-radius: 5px;
-    border: none;
-    box-shadow: 4px 4px 4px gray;
-    margin-bottom: 5px;
-  }
-
-  #contact .form .form-one {
-    width: 100%;
-    background-color: #f0f0fe;
-    border-radius: 10px;
-    color: #00416a;
   }
 
   footer {

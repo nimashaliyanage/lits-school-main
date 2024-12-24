@@ -83,36 +83,11 @@ nav .navigation ul li a {
   transition: 0.3s ease;
 }
 
+
 nav .navigation ul li a.active,
 nav .navigation ul li a:hover {
   color: #90d5ff;
 }
-
-/* Header */
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
-  background: #2c3e50;
-  color: #fff;
-}
-.header .logo img {
-  width: 120px;
-}
-.header .home-button {
-  padding: 8px 15px;
-  background-color: #e74c3c;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 14px;
-}
-.header .home-button:hover {
-  background-color: #c0392b;
-}
-
 /* Admission Section */
 .admission-section {
   max-width: 950px;
@@ -268,6 +243,27 @@ nav .navigation ul li a:hover {
 }
 
 @media screen and (max-width: 768px) {
+
+  nav {
+    padding: 10px;
+    font-size: 8px;
+  }
+
+  nav img {
+    width: 120px;
+  }
+.navigation{
+  text-align: left;
+}
+  nav .navigation ul li {
+    padding: 10px;
+  }
+
+  nav .navigation ul li a {
+    margin-left: 50px;
+    padding-left: 50px;
+    color: #00416a;
+  }
   .form-inputs {
     grid-template-columns: 1fr;
   }
